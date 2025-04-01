@@ -1,4 +1,4 @@
-package com.dev_ho.business;
+package com.dev_ho;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
