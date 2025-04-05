@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ResumeController {
     @GetMapping("/skill")
     public SkillDTO mySkill() {
+        log.info("mySkill");
         return SkillDTO.builder().name("JAVA").grade(20).build();
     }
 }
