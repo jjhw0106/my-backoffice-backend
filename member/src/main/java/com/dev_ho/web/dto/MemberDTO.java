@@ -1,4 +1,4 @@
-package com.dev_ho.member.dto;
+package com.dev_ho.web.dto;
 
 import lombok.Getter;
 import lombok.Setter;

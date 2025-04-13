@@ -1,17 +1,10 @@
-package com.dev_ho.member.controller;
+package com.dev_ho.web.controller;
 
-import com.dev_ho.member.dto.MemberDTO;
-import com.dev_ho.member.model.Member;
-import com.dev_ho.member.repository.MemberRepository;
-import com.dev_ho.member.service.MemberService;
-import jakarta.annotation.PostConstruct;
+import com.dev_ho.web.dto.MemberDTO;
+import com.dev_ho.domain.MemberService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import lombok.extern.slf4j.XSlf4j;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.HashMap;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/login")

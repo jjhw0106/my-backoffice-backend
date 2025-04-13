@@ -1,12 +1,9 @@
-package com.dev_ho.member.service;
+package com.dev_ho.domain;
 
-import com.dev_ho.member.dto.MemberDTO;
-import com.dev_ho.member.model.Member;
-import com.dev_ho.member.repository.MemberRepository;
+import com.dev_ho.web.dto.MemberDTO;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
 @Slf4j

@@ -1,4 +1,4 @@
-package com.dev_ho.member.model;
+package com.dev_ho.domain;
 
 import lombok.Builder;
 import lombok.Getter;

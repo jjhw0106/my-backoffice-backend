@@ -1,7 +1,7 @@
 package com.dev_ho.common;
 
-import com.dev_ho.member.model.Member;
-import com.dev_ho.member.repository.MemberRepository;
+import com.dev_ho.domain.Member;
+import com.dev_ho.domain.MemberRepository;
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

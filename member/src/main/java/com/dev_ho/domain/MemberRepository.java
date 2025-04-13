@@ -1,8 +1,5 @@
-package com.dev_ho.member.repository;
+package com.dev_ho.domain;
 
-import com.dev_ho.common.TestData;
-import com.dev_ho.member.model.Member;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
