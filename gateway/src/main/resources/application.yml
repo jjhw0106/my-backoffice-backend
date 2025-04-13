@@ -21,6 +21,11 @@ spring:
           uri: http://localhost:8081
           predicates:
             - Path=/resume/**
+
+        - id: resume_route
+          uri: http://localhost:9001
+          predicates:
+            - Path=/login/**
 management:
   endpoints:
     web:
