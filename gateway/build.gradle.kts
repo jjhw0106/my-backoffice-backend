@@ -20,11 +20,11 @@ repositories {
 extra["springCloudVersion"] = "2024.0.1"
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-webflux") // ✅ WebFlux 기반
-    implementation("org.springframework.cloud:spring-cloud-starter-gateway") // ✅ gateway-mvc ❌
+    implementation("org.springframework.boot:spring-boot-starter-webflux") // WebFlux 기반
+    implementation("org.springframework.cloud:spring-cloud-starter-gateway") // gateway-mvc
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    implementation("org.springframework.boot:spring-boot-starter-actuator") // ✅ actuator는 직접 추가
+    implementation("org.springframework.boot:spring-boot-starter-actuator") // actuator는 직접 추가
 
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")

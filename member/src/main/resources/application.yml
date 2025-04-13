@@ -1,6 +1,9 @@
 spring:
   application:
     name: member
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 
 server:
   port: 9001
