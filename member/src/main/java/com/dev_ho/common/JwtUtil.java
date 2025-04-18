@@ -27,7 +27,7 @@ public class JwtUtil {
                 .claim("userId", userId)
                 .setIssuedAt(now)
                 .setExpiration(expiryDate)
-                .signWith(key, SignatureAlgorithm.ES512)
+                .signWith(key)
                 .compact();
     }
 }
