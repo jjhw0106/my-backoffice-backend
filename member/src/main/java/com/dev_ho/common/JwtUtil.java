@@ -21,13 +21,13 @@ public class JwtUtil {
     public String generateToken(String userId) {
         Date now = new Date();
         Date expiryDate = new Date(now.getTime() + JWT_TOKEN_EXPIRATION_TIME);
-
+asdfasdfasdfdasfasdfasd
         return Jwts.builder()
                 .setSubject(userId)
                 .claim("userId", userId)
                 .setIssuedAt(now)
                 .setExpiration(expiryDate)
-                .signWith(key, SignatureAlgorithm.ES512)
+                .signWith(key)
                 .compact();
     }
 }
