@@ -22,10 +22,10 @@ spring:
           predicates:
             - Path=/resume/**
 
-        - id: resume_route
+        - id: auth_server
           uri: http://localhost:9001
           predicates:
-            - Path=/login/**
+            - Path=/auth/**
 management:
   endpoints:
     web:

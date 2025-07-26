@@ -35,12 +35,3 @@ out/
 
 ### VS Code ###
 .vscode/
-
-# Gemini support files
-gemini-support/
-
-# Untitled project
-untitled/
-
-# Gemini markdown
-gemini.md
