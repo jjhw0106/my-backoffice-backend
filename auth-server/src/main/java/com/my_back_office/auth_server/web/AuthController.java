@@ -1,6 +1,7 @@
 package com.my_back_office.auth_server.web;
 
 import com.my_back_office.auth_server.domain.auth.LoginService;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +18,9 @@ public class AuthController {
     private final LoginService loginService;
 
     @PostMapping("/login")
-    public ResponseEntity<Map<String, String>> login(@RequestParam String username, @RequestParam String password) {
-        return loginService.login(username, password);
+    public ResponseEntity<Map<String, String>> login(@RequestParam String username, @RequestParam String password, HttpServletResponse response) {
+        System.out.println("login: " + username);
+        return loginService.login(username, password, response);
     }
 
     /*게이트웨이 실행 안시켰을 때, CORS 등록*/
